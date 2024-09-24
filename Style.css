@@ -106,17 +106,35 @@ body {
 }
 
 .follow .thelink {
-  margin: 1rem 0.6rem 0;
+  margin: 1.4rem 0.6rem 0;
 }
 
 .follow a {
   color: var(--primer);
 }
 
+.theresume {
+  text-align: center;
+  margin: 0.8rem;
+}
+
+.theresume .resume {
+  display: inline-block;
+  background-color: var(--primer);
+  width: 10rem;
+  height: 2.6rem;
+  padding: 0.6rem 0;
+  color: var(--background);
+  text-align: center;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: var(--weights);
+}
+
 /* About  */
 .aboutme {
   margin: 2rem 0;
-  padding: 1rem 12%;
+  padding: 1rem 8%;
   height: 32rem;
 }
 
@@ -131,8 +149,7 @@ body {
 .aboutme p {
   font-weight: 400;
   font-size: 1.4rem;
-  text-align: center;
-  font-style: left;
+  text-align: justify;
   padding: 0 8rem 8rem;
 }
 
@@ -195,4 +212,47 @@ body {
 .linkproject a {
   color: var(--background);
   margin: 0 0.6rem;
+}
+
+/* smartphone */
+@media (max-width: 450px) {
+  html {
+    font-size: 56%;
+  }
+
+  .profile {
+    min-height: 54vh;
+    position: relative;
+    padding-top: 30rem;
+  }
+
+  .theresume .resume {
+    margin-top: 0.5rem;
+    padding: 0.4rem 0;
+  }
+
+  .projects {
+    margin-top: 30%;
+  }
+
+  .project {
+    margin-top: 1rem;
+  }
+
+  .aboutme {
+    margin: 10% 0;
+    padding: 1rem 3%;
+    height: 26rem;
+  }
+
+  .aboutme h2 {
+    padding-top: 1rem;
+  }
+
+  .aboutme p {
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-align: justify;
+    padding: 0 8rem 8rem;
+  }
 }
