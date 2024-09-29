@@ -67,6 +67,11 @@ body {
   margin-left: 0.6rem;
 }
 
+#hamburger-menu {
+  display: none;
+  margin-left: 29rem;
+}
+
 /* hero */
 .profile {
   min-height: 90vh;
@@ -79,14 +84,14 @@ body {
   width: 8rem;
   border-radius: 1rem;
   position: absolute;
-  top: 34%;
+  top: 30%;
   right: 46%;
 }
 
 .myimage img {
   height: 10rem;
   width: 10rem;
-  border-radius: 2rem;
+  border-radius: 6rem;
 }
 .profile h1 {
   font-weight: 600;
@@ -180,7 +185,7 @@ body {
 .project {
   width: 30rem;
   height: 36rem;
-  margin: 0 1.6rem;
+  margin: 1.6rem 1.6rem 0;
   background-color: var(--primer);
   border-radius: 1rem;
 }
@@ -226,6 +231,41 @@ body {
     padding-top: 30rem;
   }
 
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .menus {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--primer);
+    width: 14rem;
+    height: 100vh;
+    transition: 0.3s;
+    margin: 0;
+  }
+
+  .navbar .menus.active {
+    right: 0;
+  }
+
+  .navbar .menus a {
+    color: var(--background);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .menus #icon {
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
   .theresume .resume {
     margin-top: 0.5rem;
     padding: 0.4rem 0;
@@ -236,7 +276,11 @@ body {
   }
 
   .project {
-    margin-top: 1rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .row {
+    padding-bottom: 10rem;
   }
 
   .aboutme {
