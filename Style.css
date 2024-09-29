@@ -37,6 +37,7 @@ body {
   border-bottom: 0.1rem solid var(--primer);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: fixed;
   z-index: 9999;
 }
@@ -49,9 +50,9 @@ body {
 }
 
 .menus {
-  margin: 0 2rem 0 48rem;
   font-weight: 600;
   font-size: 1.1rem;
+  margin-right: 3rem;
 }
 
 .menus a {
@@ -67,25 +68,30 @@ body {
   margin-left: 0.6rem;
 }
 
-#hamburger-menu {
+.anothermenu {
   display: none;
-  margin-left: 29rem;
+  margin-right: 3rem;
+}
+
+#hamburger-menu {
+  color: var(--primer);
 }
 
 /* hero */
 .profile {
   min-height: 90vh;
-  position: relative;
-  padding-top: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12rem;
 }
 
 .profile .myimage {
-  height: 8rem;
-  width: 8rem;
+  height: 10rem;
+  width: 10rem;
   border-radius: 1rem;
-  position: absolute;
-  top: 30%;
-  right: 46%;
+  margin-bottom: 2rem;
 }
 
 .myimage img {
@@ -138,9 +144,8 @@ body {
 
 /* About  */
 .aboutme {
-  margin: 2rem 0;
-  padding: 1rem 8%;
-  height: 32rem;
+  margin: 12rem 0;
+  padding: 2rem 8%;
 }
 
 .aboutme h2 {
@@ -148,14 +153,13 @@ body {
   font-size: 2.2rem;
   text-align: center;
   margin-bottom: 2rem;
-  padding-top: 6rem;
 }
 
 .aboutme p {
   font-weight: 400;
   font-size: 1.4rem;
   text-align: justify;
-  padding: 0 8rem 8rem;
+  padding: 0 8rem;
 }
 
 /* Project  */
@@ -164,7 +168,6 @@ body {
   margin-bottom: 8rem;
   padding: 0 7% 1.4rem;
   text-align: center;
-  margin-top: 2rem;
 }
 
 .projects h2 {
@@ -219,19 +222,17 @@ body {
   margin: 0 0.6rem;
 }
 
-/* smartphone */
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   html {
-    font-size: 56%;
+    font-size: 70%;
   }
 
   .profile {
     min-height: 54vh;
-    position: relative;
-    padding-top: 30rem;
+    padding-top: 8rem;
   }
 
-  #hamburger-menu {
+  .anothermenu {
     display: inline-block;
   }
 
@@ -271,22 +272,17 @@ body {
     padding: 0.4rem 0;
   }
 
-  .projects {
-    margin-top: 30%;
-  }
-
   .project {
     margin-bottom: 1.6rem;
   }
 
   .row {
-    padding-bottom: 10rem;
+    padding-bottom: 6rem;
   }
 
   .aboutme {
-    margin: 10% 0;
-    padding: 1rem 3%;
-    height: 26rem;
+    margin: 20% 0;
+    padding: 0 3%;
   }
 
   .aboutme h2 {
@@ -298,5 +294,12 @@ body {
     font-size: 1.4rem;
     text-align: justify;
     padding: 0 8rem 8rem;
+  }
+}
+
+/* smartphone */
+@media (max-width: 450px) {
+  html {
+    font-size: 56%;
   }
 }
