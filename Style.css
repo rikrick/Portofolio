@@ -52,7 +52,7 @@ body {
 .menus {
   font-weight: 600;
   font-size: 1.1rem;
-  margin-right: 3rem;
+  margin-right: 5rem;
 }
 
 .menus a {
@@ -88,9 +88,6 @@ body {
 }
 
 .profile .myimage {
-  height: 10rem;
-  width: 10rem;
-  border-radius: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -227,11 +224,6 @@ body {
     font-size: 70%;
   }
 
-  .profile {
-    min-height: 54vh;
-    padding-top: 8rem;
-  }
-
   .anothermenu {
     display: inline-block;
   }
@@ -265,6 +257,17 @@ body {
     width: 2.5rem;
     margin-top: 2rem;
     margin-left: 2rem;
+  }
+
+  .profile {
+    min-height: 54vh;
+    padding-top: 8rem;
+  }
+
+  .myimage img {
+    height: 14rem;
+    width: 14rem;
+    border-radius: 8rem;
   }
 
   .theresume .resume {
