@@ -275,10 +275,6 @@ body {
     padding: 0.4rem 0;
   }
 
-  .project {
-    margin-bottom: 1.6rem;
-  }
-
   .row {
     padding-bottom: 6rem;
   }
@@ -289,14 +285,28 @@ body {
   }
 
   .aboutme h2 {
+    font-size: 2.6rem;
     padding-top: 1rem;
   }
 
   .aboutme p {
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     text-align: justify;
-    padding: 0 8rem 8rem;
+    padding: 0 4rem 8rem;
+  }
+
+  .project {
+    margin-bottom: 1.6rem;
+    height: 42rem;
+  }
+
+  .projects h2 {
+    font-size: 2.6rem;
+  }
+
+  .project p {
+    font-size: 1.2rem;
   }
 }
 
