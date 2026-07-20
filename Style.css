@@ -1,12 +1,12 @@
 :root {
-  --background: #e2fafc;
-  --primer: #111111;
+  --background: #f8fafc;
+  --primer: #1e293b;
   --weights: 300;
 }
 
 .darkmode {
-  --background: #111111;
-  --primer: #e2fafc;
+  --background: #0f172a;
+  --primer: #f8fafc;
   --weights: 700;
 }
 
@@ -34,7 +34,7 @@ body {
   width: 100%;
   height: 4.2rem;
   background-color: var(--background);
-  border-bottom: 0.1rem solid var(--primer);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
   justify-content: space-between;
